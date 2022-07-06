@@ -1,0 +1,254 @@
+@tailwind components;
+
+@layer components {
+    .btn {
+        border-radius: theme('borderRadius.lg');
+        padding-top: theme('spacing.2');
+        padding-bottom: theme('spacing.2');
+        padding-left: theme('spacing.4');
+        padding-right: theme('spacing.4');
+        display: flex;
+        align-items: center;
+        gap: theme('spacing.2');
+        color: theme('colors.white');
+        border: none;
+    }
+
+    .btn:hover {
+        cursor: pointer;
+    }
+
+    /*
+        PRIMARY BUTTON
+    */
+    .btn-primary {
+        background: theme('colors.primary.default') !important;
+    }
+
+    .btn-primary-gradient {
+        background: linear-gradient(90deg, theme('colors.primary.gradient.start'), theme('colors.primary.gradient.end')) !important;
+    }
+
+    .btn-primary-outline {
+        background: theme('colors.white') !important;
+        color: theme('colors.primary.default');
+        border: 1px solid theme('colors.primary.default');
+    }
+
+    .btn-primary-outline:hover {
+        background: theme('colors.primary.default') !important;
+        color: theme('colors.white');
+        border: 1px solid theme('colors.primary.default');
+    }
+
+    .btn-primary:disabled, .btn-primary-gradient:disabled, .btn-primary-outline:disabled {
+        background: theme('colors.primary.light') !important;
+        color: theme('colors.white');
+        border: none;
+    }
+
+    /*
+        SECONDARY BUTTON
+    */
+    .btn-secondary {
+        background: theme('colors.secondary.default') !important;
+    }
+
+    .btn-secondary-gradient {
+        background: linear-gradient(90deg, theme('colors.secondary.gradient.start'), theme('colors.secondary.gradient.end')) !important;
+    }
+
+    .btn-secondary-outline {
+        background: theme('colors.white') !important;
+        color: theme('colors.secondary.default');
+        border: 1px solid theme('colors.secondary.default');
+    }
+
+    .btn-secondary-outline:hover {
+        background: theme('colors.secondary.default') !important;
+        color: theme('colors.white');
+        border: 1px solid theme('colors.secondary.default');
+    }
+
+    .btn-secondary:disabled, .btn-secondary-gradient:disabled, .btn-secondary-outline:disabled {
+        background: theme('colors.secondary.light') !important;
+        color: theme('colors.light.600');
+        border: none;
+    }
+
+    /*
+        DANGER BUTTON
+    */
+    .btn-danger {
+        background: theme('colors.danger.default') !important;
+    }
+
+    .btn-danger-gradient {
+        background: linear-gradient(90deg, theme('colors.danger.gradient.start'), theme('colors.danger.gradient.end')) !important;
+    }
+
+    .btn-danger-outline {
+        background: theme('colors.white') !important;
+        color: theme('colors.danger.default');
+        border: 1px solid theme('colors.danger.default');
+    }
+
+    .btn-danger-outline:hover {
+        background: theme('colors.danger.default') !important;
+        color: theme('colors.white');
+        border: 1px solid theme('colors.danger.default');
+    }
+
+    .btn-danger:disabled, .btn-danger-gradient:disabled, .btn-danger-outline:disabled {
+        background: theme('colors.danger.light') !important;
+        color: theme('colors.white');
+        border: none;
+    }
+
+    /*
+        SUCCESS BUTTON
+    */
+    .btn-success {
+        background: theme('colors.success.default') !important;
+    }
+
+    .btn-success-gradient {
+        background: linear-gradient(90deg, theme('colors.success.gradient.start'), theme('colors.success.gradient.end')) !important;
+    }
+
+    .btn-success-outline {
+        background: theme('colors.white') !important;
+        color: theme('colors.success.default');
+        border: 1px solid theme('colors.success.default');
+    }
+
+    .btn-success-outline:hover {
+        background: theme('colors.success.default') !important;
+        color: theme('colors.white');
+        border: 1px solid theme('colors.success.default');
+    }
+
+    .btn-success:disabled, .btn-success-gradient:disabled, .btn-success-outline:disabled {
+        background: theme('colors.success.light') !important;
+        color: theme('colors.light.600');
+        border: none;
+    }
+
+    /*
+        INFO BUTTON
+    */
+    .btn-info {
+        background: theme('colors.info.default') !important;
+    }
+
+    .btn-info-gradient {
+        background: linear-gradient(90deg, theme('colors.info.gradient.start'), theme('colors.info.gradient.end')) !important;
+    }
+
+    .btn-info-outline {
+        background: theme('colors.white') !important;
+        color: theme('colors.info.default');
+        border: 1px solid theme('colors.info.default');
+    }
+
+    .btn-info-outline:hover {
+        background: theme('colors.info.default') !important;
+        color: theme('colors.white');
+        border: 1px solid theme('colors.info.default');
+    }
+
+    .btn-info:disabled, .btn-info-gradient:disabled, .btn-info-outline:disabled {
+        background: theme('colors.info.light') !important;
+        color: theme('colors.light.600');
+        border: none;
+    }
+
+    /*
+        WARNING BUTTON
+    */
+    .btn-warning {
+        background: theme('colors.warning.default') !important;
+    }
+
+    .btn-warning-gradient {
+        background: linear-gradient(90deg, theme('colors.warning.gradient.start'), theme('colors.warning.gradient.end')) !important;
+    }
+
+    .btn-warning-outline {
+        background: theme('colors.white') !important;
+        color: theme('colors.warning.default');
+        border: 1px solid theme('colors.warning.default');
+    }
+
+    .btn-warning-outline:hover {
+        background: theme('colors.warning.default') !important;
+        color: theme('colors.white');
+        border: 1px solid theme('colors.warning.default');
+    }
+
+    .btn-warning:disabled, .btn-warning-gradient:disabled, .btn-warning-outline:disabled {
+        background: theme('colors.warning.light') !important;
+        color: theme('colors.light.600');
+        border: none;
+    }
+
+    /*
+        DARK BUTTON
+    */
+    .btn-dark {
+        background: theme('colors.dark.default') !important;
+    }
+
+    .btn-dark-gradient {
+        background: linear-gradient(90deg, theme('colors.dark.gradient.start'), theme('colors.dark.gradient.end')) !important;
+    }
+
+    .btn-dark-outline {
+        background: theme('colors.white') !important;
+        color: theme('colors.dark.default');
+        border: 1px solid theme('colors.dark.default');
+    }
+
+    .btn-dark-outline:hover {
+        background: theme('colors.dark.default') !important;
+        color: theme('colors.white');
+        border: 1px solid theme('colors.dark.default');
+    }
+
+    .btn-dark:disabled, .btn-dark-gradient:disabled, .btn-dark-outline:disabled {
+        background: theme('colors.dark.light') !important;
+        color: theme('colors.light.default');
+        border: none;
+    }
+
+    /*
+        LIGHT BUTTON
+    */
+    .btn-light {
+        background: theme('colors.light.default') !important;
+        color: theme('colors.light.800');
+    }
+
+    .btn-light-gradient {
+        background: linear-gradient(90deg, theme('colors.light.gradient.start'), theme('colors.light.gradient.end')) !important;
+        color: theme('colors.light.800');
+    }
+
+    .btn-light-outline {
+        background: theme('colors.white') !important;
+        color: theme('colors.light.default');
+        border: 1px solid theme('colors.light.default');
+    }
+
+    .btn-light-outline:hover {
+        background: theme('colors.light.default') !important;
+        color: theme('colors.white');
+        border: 1px solid theme('colors.light.default');
+    }
+
+    .btn-light:disabled, .btn-light-gradient:disabled, .btn-light-outline:disabled {
+        background: theme('colors.light.200') !important;
+        color: theme('colors.light.600');
+        border: none;
+    }
+}

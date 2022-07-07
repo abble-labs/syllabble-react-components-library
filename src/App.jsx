@@ -1,11 +1,8 @@
-import Button from './Components/UI/Button/Button';
+import SignupPage from './Pages/Auth/Signup';
 
 const App = () => {
   return (
-    <div>
-      <h1>Hello world!</h1>
-      <Button variant='info'>Click here!</Button>
-    </div>
+    <SignupPage />
   );
 };
 
